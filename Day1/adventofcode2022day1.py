@@ -33,4 +33,19 @@ print(f)
 print(d)
 print(e)
 print(len(e))
+#highest value
 print(max(e))
+
+#part2
+#get total of highest value
+total = max(e)
+#remove highest to get 2nd highest
+e.remove(max(e))
+#add to total
+total += max(e)
+#remove 2nd highest
+e.remove(max(e))
+#add to total
+total += max(e)
+#get total
+print(total)
